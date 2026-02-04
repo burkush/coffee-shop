@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "expo-app",
+    "name": "Coffee Shop",
     "slug": "expo-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/coffee-icon.png",
     "scheme": "expoapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
