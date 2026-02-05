@@ -1,4 +1,5 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { ThemedText } from '@/components/themed-text';
+import { StyleSheet, View } from 'react-native';
 
 const coffeeShop = {
   name: 'Information',
@@ -13,22 +14,28 @@ const coffeeShop = {
 export default function CoffeeShopInfo() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>{coffeeShop.name}</Text>
+      <ThemedText type="title" style={styles.title}>
+        {coffeeShop.name}
+      </ThemedText>
 
       <View style={styles.section}>
-        <Text style={styles.label}>Address</Text>
-        <Text style={styles.value}>{coffeeShop.address}</Text>
+        <ThemedText style={styles.label}>Address</ThemedText>
+        <ThemedText style={styles.value}>{coffeeShop.address}</ThemedText>
       </View>
 
       <View style={styles.section}>
-        <Text style={styles.label}>Phone</Text>
-        <Text style={styles.value}>{coffeeShop.phone}</Text>
+        <ThemedText style={styles.label}>Phone</ThemedText>
+        <ThemedText style={styles.value}>{coffeeShop.phone}</ThemedText>
       </View>
 
       <View style={styles.section}>
-        <Text style={styles.label}>Hours</Text>
-        <Text style={styles.value}>Weekday: {coffeeShop.hours.weekday}</Text>
-        <Text style={styles.value}>Weekend: {coffeeShop.hours.weekend}</Text>
+        <ThemedText style={styles.label}>Hours</ThemedText>
+        <ThemedText style={styles.value}>
+          Weekday: {coffeeShop.hours.weekday}
+        </ThemedText>
+        <ThemedText style={styles.value}>
+          Weekend: {coffeeShop.hours.weekend}
+        </ThemedText>
       </View>
     </View>
   );
@@ -51,11 +58,9 @@ const styles = StyleSheet.create({
   label: {
     fontSize: 14,
     fontWeight: '600',
-    color: '#666',
     marginBottom: 4,
   },
   value: {
     fontSize: 16,
-    color: '#000',
   },
 });
