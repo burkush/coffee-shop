@@ -22,6 +22,7 @@ const MAPPING = {
   'person.2.badge.fill': 'group',
   'chevron.left.forwardslash.chevron.right': 'code',
   'chevron.right': 'chevron-right',
+  'fork.knife': 'fastfood',
 } as IconMapping;
 
 /**
